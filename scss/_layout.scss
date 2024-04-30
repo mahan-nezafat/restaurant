@@ -1,0 +1,36 @@
+body{
+    background-color: #262626;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-us{
+    @include flex-row-center();
+    height: 110vh;
+    @media (max-width:1200px) {
+        padding: 50px 0;
+    }
+    @media (max-width:998px) {
+        padding: 123px 0px 205px 0;
+    }
+}
+
+.cards{
+    @include flex-row-center();
+    flex-wrap: wrap;
+}
+
+.footer{
+    @include flex-row-center();
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+}

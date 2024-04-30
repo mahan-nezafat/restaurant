@@ -1,0 +1,54 @@
+$color-primary:#d3ab55;
+$color-secondary:#262626;
+$color-light:#bbb;
+
+@font-face {
+    font-family: sahel;
+    src: url(../fonts/Sahel.ttf),url(../fonts/Sahel.eot),url(../fonts/Sahel.woff);
+}
+
+@font-face {
+    font-family: nastaliq;
+    src: url(../fonts/IranNastaliq.ttf);
+}
+
+
+@mixin letter-spacing($space){
+    letter-spacing: $space;
+}
+
+@mixin font-weight($weight){
+    font-weight: $weight;
+}
+
+@mixin border($size) {
+    border:$size solid $color-primary;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+@mixin abs-top($fromtop) {
+    position: absolute;
+    top: $fromtop;
+    transform: -50%,-50%;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
